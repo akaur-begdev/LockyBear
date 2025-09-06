@@ -13,6 +13,7 @@ if task == "save password":
 if task == "retrieve password":
     entity_name = input ("What entity are you retrieving the password for?")
     file = entity_name + ".passwd"
+    print(file)
     retrieved_password = utils.retrieve_password(file)
     print(f"The password for {entity_name} is {retrieved_password}." )
 
